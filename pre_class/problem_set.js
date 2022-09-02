@@ -106,3 +106,21 @@ console.log(yelledWords === "Stop! it! now! Please, wont! you! stop?"); // => tr
 // Example 2
 var words = "Go to the store and grab the following: milk, bread, run, and cake";
 console.log(wordYeller(words) === "Go! to! the! store! and! grab! the! following: milk, bread, run, and! cake!"); // => true
+
+
+console.log('///////')
+function isSubstring(str, subStr){
+  return str.includes(subStr);
+}
+function arraySubstring(words, str) {
+  let boolArray = [];
+  for (let i = 0; i < words.length; i++) {
+    boolArray.push(isSubstring(words[i], str))
+  }
+
+  return boolArray;
+}
+
+// Examples:
+console.log(arraySubstring(["hello", "history", "helix", "hellos"],"hel")); // => [true, false, true, true]
+console.log(arraySubstring(["prefix", "problems", "pragmatic", "prefer"], "pre")); // => [true, false, false, true]
