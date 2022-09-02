@@ -10,6 +10,7 @@ fromMeToYou('love me or hate me') => 'love you or hate you'
 
 function fromMeToYou(sentence) {
   // your code here...
+  return sentence.split('me').join('you');
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
