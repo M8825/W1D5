@@ -124,3 +124,22 @@ function arraySubstring(words, str) {
 // Examples:
 console.log(arraySubstring(["hello", "history", "helix", "hellos"],"hel")); // => [true, false, true, true]
 console.log(arraySubstring(["prefix", "problems", "pragmatic", "prefer"], "pre")); // => [true, false, false, true]
+
+console.log('/////');
+function evenCaps(sentence) {
+  let arrSent = sentence.split('');
+
+  for (let i = 0; i < arrSent.length; i += 2) {
+    arrSent[i] = arrSent[i].toUpperCase();
+  }
+
+  return arrSent.join("")
+}
+
+
+// Examples:
+//
+console.log(evenCaps("Tom got a small piece of pie") === "ToM GoT A SmAlL PiEcE Of pIe");
+// => "ToM GoT A SmAlL PiEcE Of pIe"
+console.log(evenCaps("the book is in front of the table") === "ThE BoOk iS In fRoNt oF ThE TaBlE");
+// => "ThE BoOk iS In fRoNt oF ThE TaBlE"
