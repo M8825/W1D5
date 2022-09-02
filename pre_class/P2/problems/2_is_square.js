@@ -16,7 +16,13 @@ isSquare(16) => true
 *******************************************************************************/
 
 function isSquare(number) {
-  // your code here...
+  for (let i = 0; i < number; i++) {
+    if (i * i === number) {
+      return true;
+    }
+  }
+
+  return false;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
