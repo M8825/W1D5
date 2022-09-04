@@ -1,5 +1,11 @@
 function selectionSort(array){
-  
+  let sorted_arr = [];
+
+  for (let i = 1; i < array.length; i++) {
+    sorted_arr.push(array[i]);
+  }
+
+  return sorted_arr;
 }
 
 function smallest(array) {
